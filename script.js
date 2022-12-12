@@ -7,7 +7,9 @@ const options = {
 };
  const getWeather =(city)=>{
 	cityName.innerHTML=city
-	fetch("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city="+city ,options)
+	console.log("1111111111111111111",city,options)
+	//fetch("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city="+city ,options)
+	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city, options)
 	.then((response) => response.json())
 	.then((response) => {
 		console.log(response)
